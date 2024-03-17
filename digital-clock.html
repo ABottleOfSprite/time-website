@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Time Display</title>
+  <link rel="stylesheet" href="styles/time.css">
+  <link rel="stylesheet" href="styles/cursor.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Kode+Mono:wght@400..700&family=Monoton&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="custom-cursor">
+    <img src="icons/circle-notch-solid.svg" alt="Custom Cursor" class="cursor-path">
+  </div>
+
+  <div class="container">
+    <div class="background-text"></div>
+      <div class="trigger">
+      <div class="element1" id="time">00:00:00</div>
+      <div class="element2" id="timeCopy">00:00:00</div>
+      <div class="time-units">
+        <div class="hour">Hours</div>
+        <div class="minute">Minutes</div>
+        <div class="seconds">Seconds</div>
+      </div>
+    </div>
+
+  </div>
+  <script src="scripts/time.js"></script>
+  <script src="scripts/cursor.js"></script>
+  <script src="scripts/fonts.js"></script>
+</body>
+</html>

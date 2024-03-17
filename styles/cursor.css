@@ -1,0 +1,44 @@
+/* Cursor Trail*/
+
+.cursor-trail {
+  position: absolute;
+  color: #ff0044;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+/* Custom cursor */
+
+body {
+  cursor: none; /* Hide the default cursor */
+}
+
+.custom-cursor {
+  position: fixed;
+  pointer-events: none; /* Ensure the cursor doesn't interfere with mouse events */
+  
+}
+
+.custom-cursor img {
+  display: block; /* Ensure the cursor image is displayed as a block element */
+  height: 20px;
+  width: 20px;
+}
+
+.cursor-path {
+  filter: invert(100%);
+}
+
+@keyframes rotateCursor {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.custom-cursor img {
+  animation: rotateCursor 5s linear  infinite alternate; /* Adjust duration and timing function as needed */
+}

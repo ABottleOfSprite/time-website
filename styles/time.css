@@ -1,0 +1,70 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #121212; /* Dark background color */
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 1000;
+}
+
+.trigger {
+  position: relative;
+  text-align: center;
+}
+
+.element1,
+.element2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Geist Mono;
+  font-weight: 700;
+  font-size: 200px;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.element1 {
+  color: #00ff2218; /* Change color as needed */
+}
+
+.element2 {
+  color: #00ff22; /* Change color as needed */
+}
+
+.trigger:hover .element1 {
+  font-size: 300%; /* Change font size on hover as needed */
+}
+
+.trigger:hover .element2 {
+  font-size: 250%; /* Change font size on hover as needed */
+}
+
+.trigger:hover .time-units {
+  column-gap: 150px;
+}
+
+.time-units {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top: 100px;
+  color: #00aaff;
+  column-gap: 120px;
+  font-family: Geist Mono;
+  font-size: 25px;
+  font-weight: 100;
+  transition: column-gap 0.5s ease-in-out;
+}
+
+.time-units div {
+  width: 130px;
+  text-align: center;
+}
