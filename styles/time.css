@@ -56,7 +56,7 @@ body, html {
   display: flex;
   flex-direction: row;
   top: 100px;
-  color: #00aaff;
+  color: purple;
   column-gap: 120px;
   font-family: Geist Mono;
   font-size: 25px;
